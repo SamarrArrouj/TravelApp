@@ -1,0 +1,434 @@
+/* === HERO SECTION (version améliorée) === */
+.excursion-page .hero-section {
+  position: relative;
+  background-image: url("https://i.pinimg.com/1200x/85/62/a8/8562a863b19d2075eb119f1a22044bfe.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Overlay foncé + dégradé */
+.excursion-page .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.75));
+  z-index: 1;
+}
+
+/* Contenu du texte */
+.excursion-page .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  animation: fadeInUp 1.2s ease;
+}
+
+/* Titre principal "EXPLORE" */
+.excursion-page .hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.3rem;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* Sous-titre "DREAM DESTINATION" */
+.excursion-page .hero-content h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.6);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Description */
+.excursion-page .hero-content p {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+}
+
+/* Animation du texte */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Effet "glow" pour le titre */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffe066, 0 0 40px #ffcc00;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .excursion-page .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .excursion-page .hero-content h2 {
+    font-size: 1.3rem;
+  }
+  .excursion-page .hero-content p {
+    font-size: 1rem;
+  }
+}
+/* === BARRE DE RECHERCHE === */
+.excursion-page .search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 1s ease;
+}
+
+.excursion-page .search-bar input,
+.excursion-page .search-bar select {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  width: 230px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.excursion-page .search-bar input::placeholder {
+  color: #555;
+  opacity: 0.8;
+}
+
+.excursion-page .search-bar input:focus,
+.excursion-page .search-bar select:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+}
+
+/* === BOUTON === */
+.excursion-page .search-bar button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.excursion-page .search-bar button:hover {
+  background: linear-gradient(90deg, #ffb300, #ff8800);
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .excursion-page .search-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .excursion-page .search-bar input,
+  .excursion-page .search-bar select {
+    width: 100%;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .excursion-page .search-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .excursion-page .search-bar input,
+  .excursion-page .search-bar select {
+    width: 100%;
+  }
+}
+
+
+/* === CALLBACK BOX === */
+.excursion-page .callback-box {
+  background-color: white;
+  color: #333;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.excursion-page .callback-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.excursion-page .callback-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.excursion-page .callback-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.excursion-page .callback-box button:hover {
+  background-color: #e6b800;
+}
+
+/* === POPULAR SECTION === */
+.excursion-page .popular-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.excursion-page .popular-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* === EXCURSION CARDS === */
+.excursion-page .excursion-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.excursion-page .excursion-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.excursion-page .excursion-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.excursion-page .excursion-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.excursion-page .excursion-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.excursion-page .excursion-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.excursion-page .excursion-button {
+  margin-top: 10px;
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.excursion-page .excursion-button:hover {
+  background-color: #e6b800;
+}
+
+/* === LOADER === */
+.excursion-page .loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .excursion-page .hero-section {
+    height: 70vh;
+    padding: 0 20px;
+  }
+
+  .excursion-page .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .excursion-page .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .excursion-page .excursion-card {
+    width: 90%;
+  }
+}
+.available-spots {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+.available-spots.complet {
+  color: #ff4d4f; 
+  font-weight: bold;
+  font-style: italic;
+}
+/* === EXCURSION CARDS - ANIMATION ET STYLE === */
+.excursion-page .excursion-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.excursion-page .excursion-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: fadeInUpCard 0.8s ease forwards;
+  opacity: 0;
+}
+
+.excursion-page .excursion-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+@keyframes fadeInUpCard {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.excursion-page .excursion-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.excursion-page .excursion-card:hover .excursion-image {
+  transform: scale(1.05);
+}
+
+.excursion-page .excursion-info {
+  padding: 18px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.excursion-page .excursion-card:hover .excursion-info {
+  background-color: #fff8e7; 
+}
+
+.excursion-page .excursion-title {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.excursion-page .excursion-card:hover .excursion-title {
+  color: #ff9900;
+}
+
+/* Bouton excursion */
+.excursion-page .excursion-button {
+  margin-top: 12px;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+.excursion-page .excursion-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #ffb300, #ff8800);
+}
+
+/* Available spots “Full” */
+.available-spots.complet {
+  color: #ff4d4f; 
+  font-weight: bold;
+  font-style: italic;
+  animation: pulseRed 1.5s infinite;
+}
+
+@keyframes pulseRed {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Stagger animation pour cartes */
+.excursion-container > .excursion-card:nth-child(1) { animation-delay: 0.1s; }
+.excursion-container > .excursion-card:nth-child(2) { animation-delay: 0.2s; }
+.excursion-container > .excursion-card:nth-child(3) { animation-delay: 0.3s; }
+.excursion-container > .excursion-card:nth-child(4) { animation-delay: 0.4s; }
+.excursion-container > .excursion-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .excursion-page .excursion-card {
+    width: 90%;
+  }
+  .excursion-page .excursion-image {
+    height: 180px;
+  }
+}

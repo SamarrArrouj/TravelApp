@@ -1,0 +1,144 @@
+/* Global */
+.home {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #e6f2ff;
+}
+
+.header .logo h1 {
+  color: #0077ff;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  color: #0077ff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: linear-gradient(to right, #cce5ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  color: #003366;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.hero-content button {
+  background-color: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #005fcc;
+}
+
+.hero-image img {
+  width: 380px;
+}
+
+/* Sections */
+.destinations, .hotels, .why-us, .testimonials {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.cards, .features, .testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.card, .feature, .testimonial {
+  background-color: #f5f9ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background-color: #f2f6fc;
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005fcc;
+}
+
+/* Footer */
+.footer {
+  background-color: #99ccff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,22 @@
+.verify-page {
+  background: url("/public/assets/images/fond.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(8px);
+}
+
+.verify-card {
+  background: rgba(0, 128, 255, 0.2); 
+  color: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  width: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}

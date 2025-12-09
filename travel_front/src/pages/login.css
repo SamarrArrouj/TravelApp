@@ -1,0 +1,144 @@
+
+.login-page {
+  background: url("/public/assets/images/fond.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(8px);
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.36); 
+  color: #fff; 
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  width: 450px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.login-title,
+.input-group input,
+.options,
+.register-text,
+.message {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 18px;
+  padding: 10px 15px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-group .icon {
+  color: #aaa;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+
+.login-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0078ff);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #0078ff, #00aaff);
+  transform: scale(1.03);
+}
+
+
+.register-text {
+  margin-top: 15px;
+  color: #f0f0f0;
+  font-size: 13px;
+}
+
+.register-text a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+
+.message.success {
+  color: #4caf50; 
+  font-weight: bold;
+}
+
+.message.fail {
+  color: #f44336; 
+  font-weight: bold;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
